@@ -9,11 +9,6 @@
 user1 = User.create(name: 'Tom')
 user2 = User.create(name: 'Alice')
 
-<<<<<<< HEAD
-pet1 = Pet.create(name:'Rover', species: 'dog', user: user1)
-pet2 = Pet.create(name:'Susie', species: 'cat', user: user2)
-=======
 pet1 = Pet.create(name:'Rover', species: 'dog', user_id: user1.id)
 pet2 = Pet.create(name:'Susie', species: 'cat', user_id: user2.id)
->>>>>>> bc2c74751cc02791132404bab468cd304a2c7571
 
