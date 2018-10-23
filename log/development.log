@@ -1201,3 +1201,651 @@ Processing by UsersController#index as */*
 Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/users" for 127.0.0.1 at 2018-10-23 09:55:37 -0500
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:3
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-23 09:55:45 -0500
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:3
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-23 09:56:30 -0500
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:3
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-23 09:57:09 -0500
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:3
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-10-23 09:57:09 -0500
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"me me me", "user"=>{"name"=>"me me me"}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: users):
+  
+app/controllers/users_controller.rb:24:in `users_params'
+app/controllers/users_controller.rb:11:in `create'
+Started GET "/users" for 127.0.0.1 at 2018-10-23 09:57:09 -0500
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:3
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-23 09:57:11 -0500
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:3
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-23 09:57:13 -0500
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:3
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-23 09:57:14 -0500
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:3
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-23 09:57:14 -0500
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:3
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-23 09:57:14 -0500
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:3
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-23 09:57:14 -0500
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:3
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-23 09:57:15 -0500
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:3
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-23 09:57:31 -0500
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:3
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-23 09:57:37 -0500
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:3
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-10-23 09:57:52 -0500
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"me me me", "user"=>{"name"=>"me me me"}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: users):
+  
+app/controllers/users_controller.rb:24:in `users_params'
+app/controllers/users_controller.rb:11:in `create'
+Started GET "/users" for 127.0.0.1 at 2018-10-23 09:57:52 -0500
+Started GET "/users" for 127.0.0.1 at 2018-10-23 09:57:52 -0500
+Processing by UsersController#index as */*
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:3
+  ↳ app/controllers/users_controller.rb:3
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.3ms)
+
+
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-10-23 09:58:22 -0500
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"me me me", "user"=>{"name"=>"me me me"}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: users):
+  
+app/controllers/users_controller.rb:24:in `users_params'
+app/controllers/users_controller.rb:11:in `create'
+Started GET "/users" for 127.0.0.1 at 2018-10-23 09:58:22 -0500
+Started GET "/users" for 127.0.0.1 at 2018-10-23 09:58:22 -0500
+Processing by UsersController#index as */*
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:3
+  ↳ app/controllers/users_controller.rb:3
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.2ms)
+
+
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-23 09:58:35 -0500
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:3
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-10-23 09:58:48 -0500
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"jhlkjhlkhglk", "user"=>{"name"=>"jhlkjhlkhglk"}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: users):
+  
+app/controllers/users_controller.rb:24:in `users_params'
+app/controllers/users_controller.rb:11:in `create'
+Started GET "/users" for 127.0.0.1 at 2018-10-23 09:58:48 -0500
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:3
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-23 09:58:48 -0500
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:3
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-23 10:00:21 -0500
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:3
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-10-23 10:00:28 -0500
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"fgdfg", "user"=>{"name"=>"fgdfg"}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: users):
+  
+app/controllers/users_controller.rb:24:in `users_params'
+app/controllers/users_controller.rb:11:in `create'
+Started GET "/users" for 127.0.0.1 at 2018-10-23 10:00:28 -0500
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:3
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2018-10-23 10:03:10 -0500
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/naeblis/.rvm/gems/ruby-2.3.3/gems/railties-5.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/naeblis/.rvm/gems/ruby-2.3.3/gems/actionpack-5.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [17 times] (17.7ms)
+  Rendered /Users/naeblis/.rvm/gems/ruby-2.3.3/gems/actionpack-5.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /Users/naeblis/.rvm/gems/ruby-2.3.3/gems/railties-5.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (26.8ms)
+Completed 200 OK in 48ms (Views: 38.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-23 10:04:12 -0500
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:3
+Completed 200 OK in 37ms (Views: 23.3ms | ActiveRecord: 3.1ms)
+
+
+Started POST "/users?name=Jordan" for 127.0.0.1 at 2018-10-23 10:10:26 -0500
+Processing by UsersController#create as */*
+  Parameters: {"name"=>"Jordan"}
+Completed 500 Internal Server Error in 151340ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-10-23 10:12:58 -0500
+  
+Started GET "/users" for 127.0.0.1 at 2018-10-23 10:12:58 -0500
+Started GET "/users" for 127.0.0.1 at 2018-10-23 10:12:58 -0500
+Processing by UsersController#create as */*
+SystemExit (exit):
+Processing by UsersController#index as */*
+Processing by UsersController#index as */*
+Started POST "/users" for 127.0.0.1 at 2018-10-23 10:13:16 -0500
+  
+Completed 500 Internal Server Error in 18726ms (ActiveRecord: 0.0ms)
+
+
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Processing by UsersController#create as JSON
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/users_controller.rb:12:in `create'
+  
+  ↳ app/controllers/users_controller.rb:3
+  ↳ app/controllers/users_controller.rb:3
+  Parameters: {"name"=>"sdgsg", "user"=>{"name"=>"sdgsg"}}
+SystemExit (exit):
+Completed 200 OK in 525ms (Views: 517.7ms | ActiveRecord: 2.9ms)
+
+
+Completed 200 OK in 1029ms (Views: 1018.9ms | ActiveRecord: 1.5ms)
+
+
+  
+Completed 500 Internal Server Error in 3024ms (ActiveRecord: 0.0ms)
+
+
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/users_controller.rb:12:in `create'
+  
+Started GET "/users" for 127.0.0.1 at 2018-10-23 10:13:21 -0500
+SystemExit (exit):
+Started GET "/rails/info/routes" for 127.0.0.1 at 2018-10-23 10:13:21 -0500
+Processing by UsersController#index as */*
+  
+Processing by Rails::InfoController#routes as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/users_controller.rb:12:in `create'
+  ↳ app/controllers/users_controller.rb:3
+Completed 200 OK in 347ms (Views: 338.2ms | ActiveRecord: 2.0ms)
+
+
+  Rendering /Users/naeblis/.rvm/gems/ruby-2.3.3/gems/railties-5.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/naeblis/.rvm/gems/ruby-2.3.3/gems/actionpack-5.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [17 times] (156.7ms)
+  Rendered /Users/naeblis/.rvm/gems/ruby-2.3.3/gems/actionpack-5.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (14.0ms)
+  Rendered /Users/naeblis/.rvm/gems/ruby-2.3.3/gems/railties-5.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (489.6ms)
+Completed 200 OK in 1425ms (Views: 1393.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-23 10:13:32 -0500
+Processing by UsersController#index as */*
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:3
+Completed 200 OK in 54ms (Views: 48.4ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-10-23 10:13:36 -0500
+Processing by UsersController#create as JSON
+Started GET "/users" for 127.0.0.1 at 2018-10-23 10:13:36 -0500
+  Parameters: {"name"=>"asdgfadfsg", "user"=>{"name"=>"asdgfadfsg"}}
+Processing by UsersController#index as */*
+Completed 500 Internal Server Error in 65392ms (ActiveRecord: 0.0ms)
+
+
+  [1m[36mUser Load (4.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/users" for 127.0.0.1 at 2018-10-23 10:14:42 -0500
+  
+  ↳ app/controllers/users_controller.rb:3
+SystemExit (exit):
+Completed 200 OK in 190ms (Views: 181.0ms | ActiveRecord: 4.9ms)
+
+
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/users_controller.rb:12:in `create'
+Processing by UsersController#index as */*
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:3
+Completed 200 OK in 239ms (Views: 159.6ms | ActiveRecord: 14.7ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-23 10:14:53 -0500
+Processing by UsersController#index as */*
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:3
+Completed 200 OK in 49ms (Views: 40.9ms | ActiveRecord: 3.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-10-23 10:15:03 -0500
+Started GET "/users" for 127.0.0.1 at 2018-10-23 10:15:03 -0500
+Processing by UsersController#create as JSON
+Processing by UsersController#index as */*
+  Parameters: {"name"=>"Jordan's User", "user"=>{"name"=>"Jordan's User"}}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 400 Bad Request in 6ms (ActiveRecord: 0.0ms)
+
+
+  ↳ app/controllers/users_controller.rb:3
+  
+Completed 200 OK in 59ms (Views: 51.0ms | ActiveRecord: 1.7ms)
+
+
+ActionController::ParameterMissing (param is missing or the value is empty: users):
+  
+app/controllers/users_controller.rb:24:in `users_params'
+app/controllers/users_controller.rb:11:in `create'
+Started POST "/users" for 127.0.0.1 at 2018-10-23 10:15:21 -0500
+Processing by UsersController#create as JSON
+Started GET "/users" for 127.0.0.1 at 2018-10-23 10:15:21 -0500
+  Parameters: {"name"=>"Jordan's User", "user"=>{"name"=>"Jordan's User"}}
+Processing by UsersController#index as */*
+Completed 400 Bad Request in 3ms (ActiveRecord: 0.0ms)
+
+
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  
+  ↳ app/controllers/users_controller.rb:3
+ActionController::ParameterMissing (param is missing or the value is empty: users):
+Completed 200 OK in 44ms (Views: 38.8ms | ActiveRecord: 1.6ms)
+
+
+  
+app/controllers/users_controller.rb:24:in `users_params'
+app/controllers/users_controller.rb:11:in `create'
+Started GET "/users" for 127.0.0.1 at 2018-10-23 10:16:07 -0500
+Processing by UsersController#index as */*
+  [1m[36mUser Load (5.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:3
+Completed 200 OK in 164ms (Views: 105.6ms | ActiveRecord: 15.7ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-10-23 10:16:12 -0500
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"ajsdlfjals;df", "user"=>{"name"=>"ajsdlfjals;df"}}
+Completed 400 Bad Request in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-23 10:16:12 -0500
+  
+Processing by UsersController#index as */*
+ActionController::ParameterMissing (param is missing or the value is empty: users):
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  
+  ↳ app/controllers/users_controller.rb:3
+app/controllers/users_controller.rb:24:in `users_params'
+app/controllers/users_controller.rb:11:in `create'
+Completed 200 OK in 43ms (Views: 34.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-23 10:17:57 -0500
+Processing by UsersController#index as */*
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:3
+Completed 200 OK in 58ms (Views: 44.7ms | ActiveRecord: 2.8ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-10-23 10:19:00 -0500
+Processing by UsersController#create as JSON
+Started GET "/users" for 127.0.0.1 at 2018-10-23 10:19:00 -0500
+  Parameters: {"name"=>"sadfgasdfg", "user"=>{"name"=>"sadfgasdfg"}}
+Processing by UsersController#index as */*
+Completed 400 Bad Request in 4ms (ActiveRecord: 0.0ms)
+
+
+  [1m[36mUser Load (4.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  
+  ↳ app/controllers/users_controller.rb:3
+ActionController::ParameterMissing (param is missing or the value is empty: users):
+Completed 200 OK in 54ms (Views: 46.1ms | ActiveRecord: 4.5ms)
+
+
+  
+app/controllers/users_controller.rb:24:in `users_params'
+app/controllers/users_controller.rb:11:in `create'
+Started GET "/users" for 127.0.0.1 at 2018-10-23 10:21:15 -0500
+Processing by UsersController#index as */*
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:3
+Completed 200 OK in 49ms (Views: 40.3ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-10-23 10:21:29 -0500
+Started GET "/users" for 127.0.0.1 at 2018-10-23 10:21:29 -0500
+Processing by UsersController#create as JSON
+Processing by UsersController#index as */*
+  Parameters: {"name"=>"me me me", "user"=>{"name"=>"me me me"}}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 400 Bad Request in 7ms (ActiveRecord: 0.0ms)
+
+
+  ↳ app/controllers/users_controller.rb:3
+  
+Completed 200 OK in 67ms (Views: 58.1ms | ActiveRecord: 1.7ms)
+
+
+ActionController::ParameterMissing (param is missing or the value is empty: users):
+  
+app/controllers/users_controller.rb:24:in `users_params'
+app/controllers/users_controller.rb:11:in `create'
+Started GET "/users" for 127.0.0.1 at 2018-10-23 10:24:09 -0500
+Processing by UsersController#index as */*
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:3
+Completed 200 OK in 93ms (Views: 80.1ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-23 10:24:13 -0500
+Started POST "/users" for 127.0.0.1 at 2018-10-23 10:24:13 -0500
+Processing by UsersController#index as */*
+Processing by UsersController#create as JSON
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Parameters: {"name"=>"dsgsdgadf", "user"=>{"name"=>"dsgsdgadf"}}
+  ↳ app/controllers/users_controller.rb:3
+Completed 400 Bad Request in 4ms (ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 52ms (Views: 46.0ms | ActiveRecord: 1.7ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: users):
+  
+app/controllers/users_controller.rb:24:in `users_params'
+app/controllers/users_controller.rb:11:in `create'
+Started GET "/users" for 127.0.0.1 at 2018-10-23 10:25:01 -0500
+Processing by UsersController#index as */*
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:3
+Completed 200 OK in 43ms (Views: 34.7ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-10-23 10:25:05 -0500
+Processing by UsersController#create as JSON
+Started GET "/users" for 127.0.0.1 at 2018-10-23 10:25:05 -0500
+  Parameters: {"name"=>"sdfasdfg", "user"=>{"name"=>"sdfasdfg"}}
+Processing by UsersController#index as */*
+Completed 400 Bad Request in 4ms (ActiveRecord: 0.0ms)
+
+
+  [1m[36mUser Load (5.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  
+  ↳ app/controllers/users_controller.rb:3
+ActionController::ParameterMissing (param is missing or the value is empty: users):
+Completed 200 OK in 57ms (Views: 48.6ms | ActiveRecord: 5.2ms)
+
+
+  
+app/controllers/users_controller.rb:24:in `users_params'
+app/controllers/users_controller.rb:11:in `create'
+Started GET "/users" for 127.0.0.1 at 2018-10-23 10:25:42 -0500
+Processing by UsersController#index as */*
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:3
+Completed 200 OK in 40ms (Views: 34.0ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-10-23 10:25:47 -0500
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"sdfgsdfg", "user"=>{"name"=>"sdfgsdfg"}}
+Completed 400 Bad Request in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-23 10:25:47 -0500
+  
+Processing by UsersController#index as */*
+ActionController::ParameterMissing (param is missing or the value is empty: users):
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  
+  ↳ app/controllers/users_controller.rb:3
+app/controllers/users_controller.rb:24:in `users_params'
+app/controllers/users_controller.rb:11:in `create'
+Completed 200 OK in 51ms (Views: 41.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-23 10:28:25 -0500
+Processing by UsersController#index as */*
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:3
+Completed 200 OK in 166ms (Views: 108.1ms | ActiveRecord: 15.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-23 10:28:32 -0500
+Started POST "/users" for 127.0.0.1 at 2018-10-23 10:28:32 -0500
+Processing by UsersController#index as */*
+Processing by UsersController#create as JSON
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Parameters: {"name"=>"asdfas", "user"=>{"name"=>"asdfas"}}
+Completed 500 Internal Server Error in 79ms (ActiveRecord: 0.0ms)
+
+
+  ↳ app/controllers/users_controller.rb:3
+  
+Completed 200 OK in 130ms (Views: 124.0ms | ActiveRecord: 1.9ms)
+
+
+NoMethodError (undefined method `pry' for #<Binding:0x007f8892d42f20>
+Did you mean?  pretty_print
+               pretty_inspect
+               pretty_print_cycle
+               try):
+  
+app/controllers/users_controller.rb:11:in `create'
+Started GET "/users" for 127.0.0.1 at 2018-10-23 10:28:50 -0500
+Processing by UsersController#index as */*
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:3
+Completed 200 OK in 172ms (Views: 110.8ms | ActiveRecord: 16.7ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-10-23 10:29:00 -0500
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Morgan", "user"=>{"name"=>"Morgan"}}
+Started GET "/users" for 127.0.0.1 at 2018-10-23 10:29:00 -0500
+Processing by UsersController#index as */*
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:3
+Completed 500 Internal Server Error in 83671ms (ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 59ms (Views: 48.5ms | ActiveRecord: 3.4ms)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/users_controller.rb:12:in `create'
+Started POST "/users" for 127.0.0.1 at 2018-10-23 10:30:35 -0500
+Started GET "/users" for 127.0.0.1 at 2018-10-23 10:30:35 -0500
+Processing by UsersController#index as */*
+  [1m[36mUser Load (4.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Processing by UsersController#create as JSON
+  ↳ app/controllers/users_controller.rb:3
+  Parameters: {"name"=>"Morgan", "user"=>{"name"=>"Morgan"}}
+Completed 200 OK in 138ms (Views: 115.1ms | ActiveRecord: 16.5ms)
+
+
+Completed 500 Internal Server Error in 33358ms (ActiveRecord: 7.3ms)
+
+
+  
+Started POST "/users" for 127.0.0.1 at 2018-10-23 10:31:11 -0500
+SystemExit (exit):
+Started GET "/users" for 127.0.0.1 at 2018-10-23 10:31:11 -0500
+Processing by UsersController#create as JSON
+  
+Processing by UsersController#index as */*
+  Parameters: {"name"=>"Morgan", "user"=>{"name"=>"Morgan"}}
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/users_controller.rb:12:in `create'
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:3
+Completed 500 Internal Server Error in 2291ms (ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 2340ms (Views: 2332.7ms | ActiveRecord: 2.8ms)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/users_controller.rb:12:in `create'
+Started GET "/users" for 127.0.0.1 at 2018-10-23 10:31:14 -0500
+Processing by UsersController#index as */*
+  [1m[36mUser Load (6.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:3
+Completed 200 OK in 207ms (Views: 197.2ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-23 10:31:27 -0500
+Processing by UsersController#index as */*
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:3
+Completed 200 OK in 183ms (Views: 119.0ms | ActiveRecord: 17.2ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-10-23 10:31:32 -0500
+Processing by UsersController#create as JSON
+Started GET "/users" for 127.0.0.1 at 2018-10-23 10:31:32 -0500
+  Parameters: {"name"=>"morgan", "user"=>{"name"=>"morgan"}}
+Processing by UsersController#index as */*
+  [1m[35m (0.7ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11
+  ↳ app/controllers/users_controller.rb:3
+  [1m[36mUser Create (6.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "morgan"], ["created_at", "2018-10-23 15:31:32.770729"], ["updated_at", "2018-10-23 15:31:32.770729"]]
+Completed 200 OK in 67ms (Views: 63.0ms | ActiveRecord: 1.2ms)
+
+
+  ↳ app/controllers/users_controller.rb:11
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:11
+Completed 200 OK in 131ms (Views: 10.4ms | ActiveRecord: 10.0ms)
+
+
