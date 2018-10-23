@@ -8,7 +8,7 @@ class UsersController < ApplicationController
     end
 
     def create
-        users = User.create(users_params)
+        user = User.create!(users_params)
         render json: user
     end
 
