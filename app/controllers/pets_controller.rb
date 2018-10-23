@@ -9,7 +9,7 @@ class PetsController < ApplicationController
     end
 
     def create
-        pets = Pet.create(pets_params)
+        pet = Pet.create(pets_params)
         render json: pet
     end
 
@@ -22,6 +22,6 @@ class PetsController < ApplicationController
     private
 
     def pets_params
-        params.require(:pets).permit(:name, :species)
+        params.require(:pet).permit(:name, :species, :user_id)
     end
 end
