@@ -9,6 +9,6 @@
 user1 = User.create(name: 'Tom')
 user2 = User.create(name: 'Alice')
 
-pet1 = Pet.create(name:'Rover', species: 'dog', user_id: user1.id)
-pet2 = Pet.create(name:'Susie', species: 'cat', user_id: user2.id)
+pet1 = Pet.create(name:'Rover', species: 'dog', user_id: user1.id, likes: 4)
+pet2 = Pet.create(name:'Susie', species: 'cat', user_id: user2.id, likes: 4)
 

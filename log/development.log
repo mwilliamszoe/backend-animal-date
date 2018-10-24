@@ -357,6 +357,300 @@ Processing by UsersController#index as HTML
 Completed 200 OK in 12ms (Views: 5.5ms | ActiveRecord: 1.4ms)
 
 
+<<<<<<< HEAD
+Started GET "/" for 127.0.0.1 at 2018-10-22 17:32:04 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/zoewilliams/.rvm/gems/ruby-2.3.3/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/zoewilliams/.rvm/gems/ruby-2.3.3/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (2.5ms)
+Completed 200 OK in 9ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2018-10-22 17:32:09 -0500
+Processing by PetsController#index as HTML
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/pets_controller.rb:4
+Completed 200 OK in 28ms (Views: 17.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2018-10-22 17:38:46 -0500
+Processing by PetsController#index as */*
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/pets_controller.rb:4
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-22 17:39:40 -0500
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:3
+Completed 200 OK in 23ms (Views: 10.6ms | ActiveRecord: 1.1ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreateUsers (20181022202047)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20181022202047_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181022202047"]]
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreatePets (20181022202343)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "pets" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "species" varchar, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20181022202343_create_pets.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181022202343"]]
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (8.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-10-22 22:58:51.722057"], ["updated_at", "2018-10-22 22:58:51.722057"]]
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tom"], ["created_at", "2018-10-22 22:58:56.810471"], ["updated_at", "2018-10-22 22:58:56.810471"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Alice"], ["created_at", "2018-10-22 22:58:56.813902"], ["updated_at", "2018-10-22 22:58:56.813902"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreateUsers (20181022202047)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20181022202047_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181022202047"]]
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreatePets (20181022202343)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "pets" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "species" varchar, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20181022202343_create_pets.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181022202343"]]
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-10-22 22:59:51.254434"], ["updated_at", "2018-10-22 22:59:51.254434"]]
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tom"], ["created_at", "2018-10-22 22:59:55.335885"], ["updated_at", "2018-10-22 22:59:55.335885"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Alice"], ["created_at", "2018-10-22 22:59:55.338586"], ["updated_at", "2018-10-22 22:59:55.338586"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreateUsers (20181022202047)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20181022202047_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181022202047"]]
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreatePets (20181022202343)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "pets" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "species" varchar, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20181022202343_create_pets.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181022202343"]]
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-10-22 23:00:46.976797"], ["updated_at", "2018-10-22 23:00:46.976797"]]
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tom"], ["created_at", "2018-10-22 23:00:54.056853"], ["updated_at", "2018-10-22 23:00:54.056853"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Alice"], ["created_at", "2018-10-22 23:00:54.060204"], ["updated_at", "2018-10-22 23:00:54.060204"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mPet Create (0.6ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Rover"], ["species", "dog"], ["user_id", 1], ["created_at", "2018-10-22 23:00:54.071965"], ["updated_at", "2018-10-22 23:00:54.071965"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mPet Create (0.3ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Susie"], ["species", "cat"], ["user_id", 2], ["created_at", "2018-10-22 23:00:54.077081"], ["updated_at", "2018-10-22 23:00:54.077081"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+Started GET "/users" for 127.0.0.1 at 2018-10-22 18:01:23 -0500
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:3
+Completed 200 OK in 34ms (Views: 29.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2018-10-22 18:01:43 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by PetsController#index as HTML
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/pets_controller.rb:4
+Completed 200 OK in 19ms (Views: 14.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-23 09:59:21 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/zoewilliams/.rvm/gems/ruby-2.3.3/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/zoewilliams/.rvm/gems/ruby-2.3.3/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (3.7ms)
+Completed 200 OK in 11ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-23 09:59:25 -0500
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:3
+Completed 200 OK in 11ms (Views: 5.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-23 09:59:38 -0500
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:3
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-23 09:59:42 -0500
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:3
+Started POST "/users" for 127.0.0.1 at 2018-10-23 09:59:42 -0500
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"bob", "user"=>{"name"=>"bob"}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: users):
+  
+app/controllers/users_controller.rb:24:in `users_params'
+app/controllers/users_controller.rb:11:in `create'
+Completed 200 OK in 51ms (Views: 51.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-23 09:59:42 -0500
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:3
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-23 10:04:13 -0500
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:3
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-10-23 10:04:38 -0500
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"bob", "user"=>{"name"=>"bob"}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: users):
+  
+app/controllers/users_controller.rb:24:in `users_params'
+app/controllers/users_controller.rb:11:in `create'
+=======
   [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/bin/rake:23
   [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
@@ -1849,6 +2143,15 @@ Completed 200 OK in 67ms (Views: 63.0ms | ActiveRecord: 1.2ms)
 Completed 200 OK in 131ms (Views: 10.4ms | ActiveRecord: 10.0ms)
 
 
+<<<<<<< HEAD
+>>>>>>> f1cf1a1625043b8ca0b247f8ac9ffb07fa3bf2e3
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."user_id" = ?[0m  [["user_id", 1]]
+=======
 Started GET "/users" for 127.0.0.1 at 2018-10-23 10:39:36 -0500
   [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
@@ -5100,6 +5403,7 @@ Processing by PetsController#index as */*
 Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.4ms)
 
 
+<<<<<<< HEAD
 Started GET "/users" for 127.0.0.1 at 2018-10-23 14:16:49 -0500
   [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
@@ -8722,3 +9026,324 @@ Processing by PetsController#index as */*
 Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.4ms)
 
 
+=======
+>>>>>>> bc2c74751cc02791132404bab468cd304a2c7571
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreateLikes (20181023212725)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20181023212725_create_likes.rb:3
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "likes" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "table_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20181023212725_create_likes.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181023212725"]]
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreateLikeTables (20181023213455)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "like_tables" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "pet_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20181023213455_create_like_tables.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181023213455"]]
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/zoewilliams/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tom"], ["created_at", "2018-10-23 21:39:32.658466"], ["updated_at", "2018-10-23 21:39:32.658466"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Alice"], ["created_at", "2018-10-23 21:39:32.660878"], ["updated_at", "2018-10-23 21:39:32.660878"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[36mPet Create (0.3ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Rover"], ["species", "dog"], ["user_id", 3], ["created_at", "2018-10-23 21:39:32.675637"], ["updated_at", "2018-10-23 21:39:32.675637"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mPet Create (0.3ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Susie"], ["species", "cat"], ["user_id", 4], ["created_at", "2018-10-23 21:39:32.679596"], ["updated_at", "2018-10-23 21:39:32.679596"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+>>>>>>> 21f032fd481966adfcb064d9b62057c2d39f4703
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreateUsers (20181022202047)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20181022202047_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181022202047"]]
+  ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreatePets (20181022202343)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "pets" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "species" varchar, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20181022202343_create_pets.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181022202343"]]
+  ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreateLikes (20181023212725)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "likes" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "liker_id" integer, "liked_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20181023212725_create_likes.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181023212725"]]
+  ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-10-23 22:15:35.177075"], ["updated_at", "2018-10-23 22:15:35.177075"]]
+  ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tom"], ["created_at", "2018-10-23 22:15:43.619312"], ["updated_at", "2018-10-23 22:15:43.619312"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Alice"], ["created_at", "2018-10-23 22:15:43.623006"], ["updated_at", "2018-10-23 22:15:43.623006"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[36mPet Create (0.4ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Rover"], ["species", "dog"], ["user_id", 1], ["created_at", "2018-10-23 22:15:43.679736"], ["updated_at", "2018-10-23 22:15:43.679736"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mPet Create (0.3ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Susie"], ["species", "cat"], ["user_id", 2], ["created_at", "2018-10-23 22:15:43.683803"], ["updated_at", "2018-10-23 22:15:43.683803"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mLike Load (0.3ms)[0m  [1m[34mSELECT  "likes".* FROM "likes" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mPet Load (2.0ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mLike Create (1.0ms)[0m  [1m[32mINSERT INTO "likes" ("liker_id", "liked_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["liker_id", 1], ["liked_id", 2], ["created_at", "2018-10-23 22:27:04.129028"], ["updated_at", "2018-10-23 22:27:04.129028"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPet Load (0.4ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" ORDER BY "pets"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" ORDER BY "pets"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreateUsers (20181022202047)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20181022202047_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181022202047"]]
+  ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreatePets (20181022202343)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "pets" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "species" varchar, "user_id" integer, "likes" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20181022202343_create_pets.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181022202343"]]
+  ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreateLikes (20181023212725)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "likes" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "liker_id" integer, "liked_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20181023212725_create_likes.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181023212725"]]
+  ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (0.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-10-23 22:34:04.945269"], ["updated_at", "2018-10-23 22:34:04.945269"]]
+  ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tom"], ["created_at", "2018-10-23 22:34:12.482179"], ["updated_at", "2018-10-23 22:34:12.482179"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Alice"], ["created_at", "2018-10-23 22:34:12.487167"], ["updated_at", "2018-10-23 22:34:12.487167"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[36mPet Create (0.4ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Rover"], ["species", "dog"], ["user_id", 1], ["created_at", "2018-10-23 22:34:12.516856"], ["updated_at", "2018-10-23 22:34:12.516856"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mPet Create (0.3ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Susie"], ["species", "cat"], ["user_id", 2], ["created_at", "2018-10-23 22:34:12.520807"], ["updated_at", "2018-10-23 22:34:12.520807"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreateUsers (20181022202047)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20181022202047_create_users.rb:3
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20181022202047_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181022202047"]]
+  ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreatePets (20181022202343)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "pets" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "species" varchar, "user_id" integer, "likes" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20181022202343_create_pets.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181022202343"]]
+  ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/bin/rake:23
+Migrating to CreateLikes (20181023212725)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "likes" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "liker_id" integer, "liked_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20181023212725_create_likes.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181023212725"]]
+  ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-10-23 22:39:24.274951"], ["updated_at", "2018-10-23 22:39:24.274951"]]
+  ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/naeblis/.rvm/gems/ruby-2.3.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tom"], ["created_at", "2018-10-23 22:39:27.753055"], ["updated_at", "2018-10-23 22:39:27.753055"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Alice"], ["created_at", "2018-10-23 22:39:27.756088"], ["updated_at", "2018-10-23 22:39:27.756088"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[36mPet Create (0.3ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "user_id", "likes", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Rover"], ["species", "dog"], ["user_id", 1], ["likes", 4], ["created_at", "2018-10-23 22:39:27.788458"], ["updated_at", "2018-10-23 22:39:27.788458"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mPet Create (0.3ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "user_id", "likes", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Susie"], ["species", "cat"], ["user_id", 2], ["likes", 4], ["created_at", "2018-10-23 22:39:27.792269"], ["updated_at", "2018-10-23 22:39:27.792269"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
