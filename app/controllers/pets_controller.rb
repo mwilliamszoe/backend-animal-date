@@ -21,7 +21,6 @@ class PetsController < ApplicationController
     end
 
     def update
-
         # create no like using liker_id and liked_id
         like = Like.create(liker_id: params[:liker_id], liked_id: params[:liked_id])
         # byebug
@@ -42,6 +41,6 @@ class PetsController < ApplicationController
     private
 
     def pets_params
-        params.require(:pet).permit(:name, :species, :user_id)
+        params.require(:pet).permit(:name, :species, :user_id, :species_availability, :ownership, :diet)
     end
 end
