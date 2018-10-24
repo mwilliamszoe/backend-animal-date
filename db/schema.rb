@@ -22,6 +22,10 @@ ActiveRecord::Schema.define(version: 2018_10_23_212725) do
   create_table "pets", force: :cascade do |t|
     t.string "name"
     t.string "species"
+    t.string "species_availability"
+    t.string "ownership"
+    t.string "image"
+    t.string "diet"
     t.integer "user_id"
     t.integer "likes"
     t.datetime "created_at", null: false
