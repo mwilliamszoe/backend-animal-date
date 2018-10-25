@@ -35,6 +35,9 @@ class PetsController < ApplicationController
     end
 
     def destroy
+        puts params
+        pet = Pet.find(params[:id])
+        pet.delete
     end
 
 
