@@ -16,6 +16,9 @@ class LikesController < ApplicationController
     end
 
     def destroy
+        puts params
+        like = Like.find(params[:id])
+        like.delete
     end
 
     private
